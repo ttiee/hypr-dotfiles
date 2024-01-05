@@ -39,7 +39,7 @@ button {
   box-shadow: inset 0 -3px transparent;
   /* Avoid rounded borders under each button name */
   border: none;
-  border-radius: 5;
+  border-radius: 5px;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
@@ -52,6 +52,7 @@ button:hover {
   padding: 0 5px;
   background-color: transparent;
   color: #ffffff;
+  border-radius: 20px;
 }
 
 #workspaces button:hover {
@@ -72,6 +73,7 @@ button:hover {
   border-bottom: 3px solid #ffffff;
 }
 
+
 #clock,
 #battery,
 #cpu,
@@ -87,6 +89,12 @@ button:hover {
 #mode,
 #idle_inhibitor,
 #scratchpad,
+
+#clock, #battery, #cpu, #memory, #disk, #temperature, #backlight, #network, #pulseaudio, #wireplumber, #custom-media, #tray, #mode, #idle_inhibitor, #scratchpad{
+  padding: 0 15px;
+  border-radius: 10px;
+}
+
 #mpd {
   padding: 0 10px;
   color: #ffffff;
